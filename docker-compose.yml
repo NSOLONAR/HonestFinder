@@ -1,0 +1,28 @@
+version: '3.1'
+
+networks:
+    my-net:
+      external: true
+
+services:
+  honestfinder:
+    image: php:7.2-apache
+    container_name: honestfinder
+    environment:
+      - PUID=33
+      - PGID=33
+      - TZ=Europe/Berlin
+    volumes:
+      - /mnt/dockerdata/honestfinder/html/html:/var/www/html
+#    ports:
+#      - 80:80
+    restart: always
+    networks:
+      - my-net
+    labels:
+      - "traefik.http.routers.honestfinder.rule=Host(`honestfinder.solonar.at`)"
+      - "traefik.http.routers.honestfinder.tls=true"
+      - "traefik.http.routers.honestfinder.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.honestfinder.tls.domains[0].main=solonar.at"
+      - "traefik.enable=true"
+
