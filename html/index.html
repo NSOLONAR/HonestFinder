@@ -37,10 +37,10 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal" data-bs-target="#SignupModal">Signup</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded">Settings</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded">Tags</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded">Scan tag</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal" data-bs-target="#TagsModal">Tags</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded">Scan</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded">Shop</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><!-- Logout button --><div id="userfront-dndlna"><a class="nav-link py-3 px-0 px-lg-3 rounded">Logout</a></div></li>
+                        <li class="nav-item mx-0 mx-lg-1" id="logout-menu-item"><!-- Logout button --><div id="userfront-dndlna"><a class="nav-link py-3 px-0 px-lg-3 rounded">Logout</a></div></li>
                         
                     </ul>
                 </div>
@@ -50,7 +50,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." /> -->
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">HonestFinder</h1>
                 <!-- Icon Divider-->
@@ -159,10 +159,6 @@
                                     
                                     <!-- Login Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -189,10 +185,6 @@
                                     </div>
                                     <!-- Portfolio Modal - Text-->
                                     <!-- Signup form --><div id="userfront-krnarn"></div>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -218,11 +210,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <p class="mb-4">Only customised tags are shown. Scan a tag to customise it.</p>
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item list-group-item-action">Teddy</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Phone Nick</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
